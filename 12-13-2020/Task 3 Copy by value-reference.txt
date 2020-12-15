@@ -1,0 +1,7 @@
+Copy by Value:
+1.It will change the value of the operator.
+2.It is applicable to primitive datatypes.
+
+Copy by Reference:
+1.It will assign the reference(duplicate operator pointing to same value).
+2.It will applicable to composite datatypes.

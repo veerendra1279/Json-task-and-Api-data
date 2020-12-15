@@ -1,0 +1,4 @@
+1.Http2 supports request multiplexing which means it will establish only single TCP Connection for all requests,whereas Http1 create new TCP Connection for every request.With the help of request multiplexing Http2 will reduce network traffic(has only one tcp connection)and data transfer speed also increases wrt Http1.
+2.Http2 supports header data compression, whereas in Http1 for each request it will carry that heade data.Beacause of this same data is transmitting repeatedly. 
+3.Http2 supports push resources which means it wiil sent other required resources along with current request,so that it will hep to load page quickly.
+4.Http2 uses binary framing layer which encapsulates the data in binary format.it will help to split and share the data so that increasing flexibility of data transfer.

@@ -1,0 +1,10 @@
+//1. Loop over the accidents array. Change atFaultForAccident from true to false.
+for(let i in myCar.accidents){
+    myCar.accidents[i].atFaultForAccident=false;
+}
+console.log(myCar);
+
+//2. Print the dated of my accidents
+for(let i in myCar.accidents){
+    console.log(myCar.accidents[i].date);
+}

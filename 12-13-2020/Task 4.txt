@@ -1,0 +1,18 @@
+let arr=[1,2,3];
+
+//first way
+var resArray=[];
+for(let i in arr){
+    resArray.push(arr[i]);
+}
+console.log(resArray);
+
+//Second way
+let anotherArray=[...arr];
+console.log(anotherArray);
+
+// for object copy by values
+let obj = {name:'Sam',age:'25'};
+let anotherObj={...obj};
+console.log(anotherObj);
+

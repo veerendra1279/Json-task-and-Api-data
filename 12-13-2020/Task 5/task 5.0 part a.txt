@@ -1,0 +1,50 @@
+//Add height and weight to Fluffy
+cat.height=2;
+cat.weight=3;
+
+//Fluffy name is spelled wrongly. Update it to Fluffyy
+cat.name='Fluffyy';
+
+//CatFriends Activities
+var activities=[];
+for(let i in cat.catFriends){
+    // for(let j in cat.catFriends[i].activities){
+    //     activities.push(cat.catFriends[i].activities[j])
+    // }
+    Array.prototype.push.apply(activities, cat.catFriends[i].activities);
+
+}
+console.log(activities);
+
+//catFriends Names
+console.log("CatFriends Name:");
+for(let i in cat.catFriends){
+    console.log(cat.catFriends[i].name);
+}
+
+//catFriends total weight
+let totalWeight=0;
+for(let i in cat.catFriends){
+    totalWeight+=cat.catFriends[i].weight;
+}
+console.log("CatFriends weight:",totalWeight)
+
+//total activities
+let totalActivities=cat.activities.length;
+for(let i in cat.catFriends){
+    totalActivities+=cat.catFriends[i].activities.length;
+}
+console.log("Total Activities:",totalActivities);
+
+
+//adding 2 more activities to foo & bar cats
+for(let i in cat.catFriends){
+    Array.prototype.push.apply(cat.catFriends[i].activities,['Walk','Dance']);
+}
+
+//Update the fur color of bar
+for(let i in cat.catFriends){
+    if(cat.catFriends[i].name==='bar'){
+        cat.catFriends[i].furcolor='red';
+    }
+}

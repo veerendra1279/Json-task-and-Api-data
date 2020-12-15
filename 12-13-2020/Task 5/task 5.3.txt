@@ -1,0 +1,6 @@
+var object = {name: 'ISRO', age: 35, role: 'Scientist'};
+var resultArr=[]
+for(let i in object){
+    resultArr.push([i,object[i]])
+}
+console.log(resultArr);
